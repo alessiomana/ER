@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            select, input, button{
+                margin-top: 10px;
+            }
+
+            .not-visible{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Easy Report</h1>
+        <label for="incident_type">Tipo incident</label> 
+        <select id="incident_type" name="incident_type">
+            <option>--Seleziona--</option>
+            <option>Large Outbound Upload</option> 
+        </select> 
+        <br/>
+        <label for="language">Lingua report</label> 
+        <select id="language" name="language "> 
+            <option>Italiano</option> 
+            <option>Inglese</option>
+        </select>
+        <div id="large_outbound_form" class="not-visible">
+            <label for="host">Host</label>
+            <input type="text" id="host" name="host"></input> <br/>
+            <label for="src_ip">IP sorgente</label> 
+            <input type="text" id="src_ip" name="src_ip"></input> <br/>
+            <label for="dest_ip">IP di destinazione</label>
+            <input type="text" id="dest_ip" name="dest_ip"></input> <br/>
+            <label for="upload">Upload totale (MB)</label>
+            <input type="text" id="upload" name="upload"></input>
+        </div>
+        <button class="not-visible">Crea reports</button>
+        <script src="script.js"></script>
+    </body>
+</html>
+</head>
